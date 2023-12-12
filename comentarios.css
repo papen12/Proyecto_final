@@ -1,0 +1,215 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    user-select: none;
+}
+.ul__li__button{
+    border-radius: 10px;
+    background-color: #f5b24d;
+    color: white;
+ }
+ #navegador{
+    background-color:#FFF5E1 ;
+    
+    z-index: 5;
+    width: 100%;
+}
+.logoimg{
+    margin: 0;
+    width: 6vw;
+    height: auto;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    top: 0;
+}
+li{
+    padding: 2vh;
+    border-radius: 20px;
+}
+li a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+footer{
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 10;
+    background-color:#FFF5E1 ;
+    z-index: 4;
+    margin-top: 600px;
+   
+}
+footer a{
+    margin-left: 2%;
+    padding: 1%;
+    width: 15%;
+    
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 15px;
+}
+.fa:hover{
+    opacity: 0.7;
+}
+.fa:hover {
+    opacity: 0.7;
+    
+}
+
+.fa-facebook {
+  background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    animation: cambiarfondo 30s linear infinite;
+}
+
+@keyframes cambiarfondo{
+    0% {background-image: url("https://i.ibb.co/yRMRYd8/fondo-admin.webp");}
+    25% {background-image: url("https://i.ibb.co/8Myd1Ky/fondoanimacion2.jpg");}
+    50% {background-image: url("https://i.ibb.co/HFwphSP/fondo-animacion3.webp");}
+    75% {background-image: url("https://i.ibb.co/HFwphSP/fondo-animacion3.webp");}
+    100% {background-image: url("https://i.ibb.co/HFwphSP/fondo-animacion3.webp");}
+}
+.button{
+    width: 350px;
+}
+form{
+    border-radius: 20px;
+}
+
+h4{
+    border-radius: 20px;
+}
+h4:hover{
+    background-color:gray;
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    animation: cambiarfondo 30s linear infinite;
+}
+
+*{
+    color: black;
+}
+#main__div #main__div__btn{
+   margin-left: 600px;
+   margin-top: 100px;
+}
+@media screen and (max-width: 600px) {
+    #main__div__btn {
+        position: absolute;
+        right: 150px; 
+        bottom: 400px; 
+        margin-right: 0; 
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+    #main__div__btn {
+        position: absolute;
+        right: 350px; 
+        bottom: 400px; 
+        margin-right: 0; 
+    }
+}
+#main__div {
+    background-color: #f0f0f0; 
+    border-radius: 15px; 
+    padding: 20px; 
+ }
+ #comentar{
+    margin-top: 30px;
+ }
+ .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 3px;
+    border: 1px solid black; /* Borde de la tabla */
+    background-color: azure;
+}
+
+th, td {
+    border: 1px solid black; /* Borde de las celdas */
+    padding: 10px;
+    text-align: left;
+}
+
+th:nth-child(1) {
+    width: 20%;
+}
+
+th:nth-child(2) {
+    width: 80%;
+}
+
+
+@media screen and (max-width: 600px) {
+    table {
+        font-size: 14px; 
+    }
+    th, td {
+        padding: 5px; 
+    }
+    th, td {
+        border: 1px solid black; 
+        text-wrap: wrap;
+    }
+}

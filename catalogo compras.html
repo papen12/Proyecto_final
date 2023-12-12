@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="catalogo compras.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <nav id="navegador" class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="logo" height="100" width="100" src="https://i.ibb.co/6DcsBL4/Group-1.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <h3><a class="nav-link" href=""><u>PEDIDO</u></a></h3>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+            </li>
+            <li class="nav_item">
+              <h3><a class="nav-link" href="http://127.0.0.1:5501/pagina%20principal.html">PRINCIPAL</a></h3>
+            </li>
+            <li class="nav_item">
+              <h3><a class="nav-link" href="http://127.0.0.1:5501/comentarios.html">COMENTA!</a></h3>
+            </li>
+          </ul>
+        </div>
+            
+          <button class="btn btn-success position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">compras
+            <span id="span1" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                0
+            </span>
+          </button>
+        </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="row">
+      <div class="col-lg-3 md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/teparis20un.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="nombre1" class="card-title">Cafe Ideal</h5>
+            <p class="card-text">precio <del>30 Bs</del> <data value="26" id="precio1">26 Bs</data></p>
+            <button id="desame" href="#" class="btn_ordenar" class="btn btn-primary">ORDENAR</button>
+            <button href="#" class="btn_ordenar" class="btn btn-primary">DESHACER</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="/imagenes/cafe_copacabana_gross_1000x.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="nombre2" class="card-title">Te Paris</h5>
+            <p class="card-text">precio <del>30 Bs</del> <data id="precio2" value="20">28 Bs</data></p>
+            <button id="panqueques" class="btn_ordenar" class="btn btn-primary">ORDENAR</button>
+            <button href="#" class="btn_ordenar" class="btn btn-primary">DESHACER</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 md-4">
+        <div class="card" style="width: 18rem;">
+          <img height="200" src="/imagenes/DSC06565.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="nombre3" class="card-title">Cafe Copacabana</h5>
+            <p class="card-text">precio <del>30 Bs</del> <data id="precio3" value="20">24 Bs</data></p>
+            <button id="waffles" href="#" class="btn_ordenar" class="btn btn-primary">ORDENAR</button>
+            <button href="#" class="btn_ordenar" class="btn btn-primary">DESHACER</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 md-6">
+        <div class="card" style="width: 18rem;">
+          <img height="200"
+            src="/imagenes/ALBETE005_M.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 id="nombre4" class="card-title">Cafe Oriental</h5>
+            <p class="card-text">precio <del>30 Bs</del> <data id="precio4" value="20">26 Bs</data></p>
+            <button id="crois" href="#" class="btn_ordenar" class="btn btn-primary">ORDENAR</button>
+            <button href="#" class="btn_ordenar" class="btn btn-primary">DESHACER</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 md-6">
+        <div class="card" style="width: 18rem;">
+          <img height="200" src="/imagenes/teparis20un.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 id="nombre5" class="card-title">Galletas maria</h5>
+            <p class="card-text">precio <del>28 Bs</del> <data id="precio5" value="20">20 Bs</data></p>
+            <button id="descom" href="#" class="btn_ordenar" class="btn btn-primary">ORDENAR</button>
+            <button href="#" class="btn_ordenar" class="btn btn-primary">DESHACER</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 md-6">
+        <div class="card" style="width: 18rem;">
+          <img height="200" src="/imagenes/101126.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="nombre6" class="card-title">galletas</h5>
+            <p class="card-text">precio <del>30 Bs</del> <data id="precio6" value="20">26 Bs</data></p>
+            <button id="huevtoc" href="#" class="btn_ordenar" class="btn btn-primary">ORDENAR</button>
+            <button href="#" class="btn_ordenar" class="btn btn-primary">DESHACER</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 md-6">
+        <div class="card" style="width: 18rem;">
+          <img height="200" src="/imagenes/Galleta-Rosquita-Bicolor-Mabels-250-Gr-1-156.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="nombre7" class="card-title">Galletas rosquitas</h5>
+            <p class="card-text">precio <del>30 Bs</del> <data id="precio7" value="20">26 Bs</data></p>
+            <button id="cafeame" href="#" class="btn_ordenar" class="btn btn-primary">ORDENAR</button>
+            <button href="#" class="btn_ordenar" class="btn btn-primary">DESHACER</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 md-6">
+        <div class="card" style="width: 18rem;">
+          <img height="200" src="imagenes/Galleta-Rosquita-Bicolor-Mabels-250-Gr-1-156.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="nombre8" class="card-title">Galletas Rex</h5>
+            <p class="card-text">precio <del>30 Bs</del> <data  id="precio8" value="20">26 Bs</data></p>
+            <button id="chocolate" href="#" class="btn_ordenar" class="btn btn-primary">ORDENAR</button>
+            <button href="#" class="btn_ordenar" class="btn btn-primary">DESHACER</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"  aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Pedido</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <table id="tabla" class=" table-bordered">
+              <thead>
+                  <tr>
+                      <td>Nº</td>
+                      <td>Descripción</td>
+                      <td>Precio</td>
+                  
+                  </tr>
+                  <p>Total: Bs<span id="total">0.00</span></p>
+
+              </thead>
+              <tbody>
+
+              </tbody>
+          </table>
+          <div class="d-grid gap-2">
+              <button type="button" name="" id="btnElim" class="btn btn-primary">ELIMINAR</button>
+          </div>
+      </div>
+  </div>
+  </main>
+  <footer>
+    <a href="" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="catalogo compras.js"></script>
+</body>
+
+</html>

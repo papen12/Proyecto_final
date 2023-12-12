@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación</title>
+</head>
+<body>
+    <div class="container py-4" id="main__div">
+        <button id="main__div__btn" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal_registro">
+            <h5>INGRESE SUS DATOS</h5>
+        </button>
+        <div class="modal fade" id="modal_registro" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-tittle">REGISTRESE PORFAVOR</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="id_chef">ID CHEF:</label>
+                                    <input maxlength="10" id="id_chef" type="text" name="id_chef" class="tt" data-placement="right" title="Ingrese su Id de Chef">
+                                </div>
+                                <div class="col-12">
+                                    <label for="nombre">Nombre:</label>
+                                    <input maxlength="15" id="nombre" type="text" name="nombre" placeholder="EJ: JUAN" class="ttt" data-placement="right" title="Ingrese su nombre">
+                                </div>
+                                <div class="col-12">
+                                    <label for="apellido">Apellido:</label>
+                                    <input maxlength="20" type="text" id="apellido" placeholder="EJ: PEREZ" class="tttt" data-placement="right" title="Ingrese su apellido">
+                                </div>
+                                <div class="col-12">
+                                    <label for="password">Contraseña:</label>
+                                    <input maxlength="8" id="password" type="password" name="password" class="ttttt" data-placement="right" title="Ingrese su contraseña">
+                                </div>
+                                <div class="col-12">
+                                    <label for="id_plato">Id del plato:</label>
+                                    <input maxlength="10" id="id_plato" type="text" name="id_plato" class="tt" data-placement="right" title="Id del plato a modificar">
+                                </div>
+                                <div class="col-12">
+                                    <label for="razon">Razon de la peticion:</label>
+                                    <textarea name="razon" id="razon" cols="30" rows="10" class="tttttt" data-placement="right" title="RAZON O MOTIVO DE LA SUGERENCIA"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btn_enviar" class="btn btn-primary">Agregar</button>
+                        <button class="btn btn-warning"><a href="">Quitar</a></button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ID del Chef</th>
+                <th>Nombre</th>
+                <th>Razón</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas se agregarán aquí -->
+        </tbody>
+    </table>
+
+    <script>
+        document.getElementById("btn_enviar").addEventListener("click", function () {
+            var id_chef = document.getElementById("id_chef").value;
+            var nombre = document.getElementById("nombre").value;
+            var razon = document.getElementById("razon").value;
+
+            if (id_chef && nombre && razon) {
+                var tabla = document.querySelector("table tbody");
+
+                // Crear una fila
+                var fila = document.createElement("tr");
+
+                // Crear celdas para los datos
+                var celdaId = document.createElement("td");
+                celdaId.textContent = tabla.rows.length + 1;
+
+                var celdaIdChef = document.createElement("td");
+                celdaIdChef.textContent = id_chef;
+
+                var celdaNombre = document.createElement("td");
+                celdaNombre.textContent = nombre;
+
+                var celdaRazon = document.createElement("td");
+                celdaRazon.textContent = razon;
+
+                // Agregar las celdas a la fila
+                fila.appendChild(celdaId);
+                fila.appendChild(celdaIdChef);
+                fila.appendChild(celdaNombre);
+                fila.appendChild(celdaRazon);
+
+                // Agregar la fila a la tabla
+                tabla.appendChild(fila);
+
+                // Limpiar el formulario
+                document.getElementById("id_chef").value = "";
+                document.getElementById("nombre").value = "";
+                document.getElementById("razon").value = "";
+            } else {
+                alert("Por favor, complete todos los campos del formulario.");
+            }
+        });
+    </script>
+</body>
+</html>
